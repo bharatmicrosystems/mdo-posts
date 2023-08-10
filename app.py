@@ -34,7 +34,7 @@ def create_post():
     title = data.get('title')
     content = data.get('content')
     user_id = request.headers.get('user-id')
-    post = {'title': title, 'content': content, 'user_id': user_id}
+    post = {'titl': title, 'content': content, 'user_id': user_id}
     inserted_post = collection.insert_one(post)
     return jsonify({'post': str(inserted_post.inserted_id)}), 201
 
