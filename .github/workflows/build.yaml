@@ -17,4 +17,4 @@ jobs:
       run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USER  }}/mdo-posts
     - name: Push the Docker image
       id: push
-      run: docker push ${{ secrets.DOCKER_USER  }}/flask-app-gh-actions
+      run: docker push ${{ secrets.DOCKER_USER  }}/mdo-posts
