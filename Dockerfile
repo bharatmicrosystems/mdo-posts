@@ -1,4 +1,4 @@
-FROM python:alpine3.18
+FROM python:3.7-alpine
 ENV FLASK_APP=app.py
 ENV FLASK_RUN_HOST=0.0.0.0
 RUN apk add --no-cache gcc musl-dev linux-headers
